@@ -10,10 +10,7 @@ root="$script_dir/.."
 source_dir="$script_dir/../source"
 build_dir="$script_dir/../build/$config"
 install_dir="$script_dir/../install/$config"
-
-cmake -S $source_dir -B $build_dir -DCMAKE_INSTALL_PREFIX=$install_dir -G Ninja
-cmake --build $build_dir --target install
-
+pwd=$(pwd)
 cd $root
 git clone https://code.qt.io/qt/qt5.git source
 cd $source_dir
@@ -24,3 +21,4 @@ cd $build_dir
 ${source_dir}/configure -prefix ${install_dir} -release -opensource -confirm-license -nomake tools -nomake examples -nomake tests
 cmake --build . --parallel 4
 cmake --install .
+cd $pwd
