@@ -6,7 +6,6 @@ version=${1:-6.3.0}
 external_id=${2:-qt}
 
 # prepare necessary variables
-url="https://github.com/gabime/spdlog/archive/refs/tags/v$version.tar.gz"
 dir="ocp/external/$external_id/$version/source"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 gz_file="$external_id-v$version.tar.gz"
