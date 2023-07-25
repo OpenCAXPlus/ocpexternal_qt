@@ -8,11 +8,11 @@ on:
       id:
         description: "Software id"
         required: true
-        default: "spdlog"
+        default: "qt"
       version:
         description: "Software version"
         required: true
-        default: "1.11.0"
+        default: "6.3.0"
 jobs:
   build:
     runs-on: ubuntu-latest
