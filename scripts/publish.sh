@@ -4,7 +4,7 @@
 # permission to the bucket. To publish this external project, please submit an 
 # issue in the OCP sdk repository.
 
-version=${1:-6.3.0}
+version=${1:-6.5.2}
 external_id=${2:-qt}
 
 xzfile="$external_id-$version.tar.xz"

@@ -3,11 +3,11 @@ uid: qt # the unique identifier for the program the find the external project, y
 type: external # the current project type, could be external or toolkit, or starter
 licenses: ["GPL"] # the external project's licenses
 default: # set some default values
-  version: "6.3.0" # the default version to be installed if not specified in the command
+  version: "6.5.2" # the default version to be installed if not specified in the command
   configuration: "default" # the default config if not specified 
   scripts: ["prepare", "publish", "check"] # some scripts that you can run 
 versions: # list of all versions, to make this easier for human to read there should be no hidden parts for each item
-  - id: "6.3.0" # the version number this will be used in the tar.xz file's name
+  - id: "6.5.2" # the version number this will be used in the tar.xz file's name
     default: "default" # override the default configurations
     scripts:  ["prepare", "publish", "check"] # override the default scripts
     configurations: ["default"]

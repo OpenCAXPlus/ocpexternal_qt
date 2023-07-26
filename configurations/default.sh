@@ -10,5 +10,10 @@ source_dir="$script_dir/../source"
 build_dir="$script_dir/../build/$config"
 install_dir="$script_dir/../install/$config"
 
-cmake -S $source_dir -B $build_dir -DCMAKE_INSTALL_PREFIX=$install_dir
+mkdir -p $build_dir
+cd $build_dir
+${source_dir}/configure -prefix ${install_dir} -release -opensource -confirm-license -nomake tools -nomake examples -nomake tests
+cd -
+
+cmake --build $build_dir
 cmake --build $build_dir --target install

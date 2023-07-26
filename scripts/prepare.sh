@@ -2,7 +2,7 @@
 # You should modify this script to prepare the folder structure for external project source codes
 # The source code must be in ocp/external/external_id/version/source folder
 # get command line arguments
-version=${1:-6.3.0}
+version=${1:-6.5.2}
 external_id=${2:-qt}
 
 # prepare necessary variables
@@ -26,7 +26,7 @@ cd $dir/..
 git clone https://code.qt.io/qt/qt5.git source
 cd source
 git checkout v$version
-./init-repository --module-subset="qtbase"
+./init-repository --module-subset="essential"
 echo "Download $external_id $version"
 
 
