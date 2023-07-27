@@ -1,8 +1,6 @@
-# OpenCAX+ External Template
+# OpenCAX+ External Project for Qt essential
 
-This is a template repository for external dependencies of the OpenCAX+ projects.
-
-External dependencies are used for both toolkits or starters of the OpenCAX+ SDK.
+Use the source code of Qt essentials, which includes qml, quick, multimedia, sql, core, gui.
 
 ## Learn how to create the external project for OpenCAX+
 
